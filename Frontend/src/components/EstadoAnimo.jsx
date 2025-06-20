@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const EstadoAnimo = () => {
+export const EstadoAnimo = ({animoRef}) => {
   return (
-    <div>EstadoAnimo</div>
+    <div ref={animoRef} className="">EstadoAnimo</div>
   )
 }
