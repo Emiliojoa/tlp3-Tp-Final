@@ -10,3 +10,5 @@ def prediccion_futbol(body: BodyModeloFutbol):
 @router.post("/predecirAnimo")
 def prediccion_animo(body: BodyModeloAnimo):
     return predict_animo(body)
+
+

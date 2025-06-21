@@ -2,11 +2,11 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { Caracteristicas } from './CaracteristicasJugador/Caracteristicas'
 
-export const PrecioJugador = ({nombre, precioRef}) => {
+export const PrecioJugador = ({ nombre, precioRef }) => {
   const [nombreJugador, setNewNombre] = useState("Jugador")
-    useEffect(() => {
+  useEffect(() => {
     setNewNombre(nombre)
-    }, [nombre])
+  }, [nombre])
   return (
     <div ref={precioRef} className='min-h-screen bg-gradient-to-br from-amber-400 via-yellow-500 to-orange-500 relative overflow-hidden'>
       <div className="absolute inset-0 opacity-10">
@@ -36,14 +36,14 @@ export const PrecioJugador = ({nombre, precioRef}) => {
                 </svg>
               </div>
             </div>
-            
+
             <h1 className="font-extrabold text-4xl lg:text-6xl text-white mb-6 leading-tight">
-              Averigua tu 
+              Averigua tu
               <span className="block bg-gradient-to-r from-white to-yellow-100 bg-clip-text text-transparent">
                 Precio de Mercado
               </span>
             </h1>
-            
+
             <p className='text-lg lg:text-xl text-white/90 leading-relaxed font-medium'>
               Ingresa tus características como jugador —edad, posición, goles, asistencias, minutos jugados, entre otras— y nuestro sistema estimará tu valor de mercado comparándote con futbolistas reales y su rendimiento profesional.
             </p>
@@ -76,7 +76,7 @@ export const PrecioJugador = ({nombre, precioRef}) => {
               </div>
             </div>
           </article>
-          
+
           <div className="transform hover:scale-[1.01] transition-transform duration-300">
             <Caracteristicas nombreJugador={nombreJugador} />
           </div>

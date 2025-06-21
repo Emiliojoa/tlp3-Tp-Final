@@ -42,14 +42,14 @@ export const App = () => {
         <article id='mensaje-superior' className='flex items-center pt-2 px-2 text-xl gap-3 border-b-1 border-white bg-amber-400'>
           <h1 className='font-bold text-white'>Crees que vales para el mundo del futbol?, Compruebalo</h1>
           <button className='cursor-pointer'>
-            <CornerDownRight color='black' size={28} className='mt-4'/>
+            <CornerDownRight color='black' size={28} className='mt-4' />
           </button>
         </article>
-        <Header 
-        onScrollTo={scrollToSection}
-        refs={{precioRef, animoRef, inicioRef}}
-        nombre={nombre} />
-        <Hero inicioRef={inicioRef} setearNombre={setNombre}/>
+        <Header
+          onScrollTo={scrollToSection}
+          refs={{ precioRef, animoRef, inicioRef }}
+          nombre={nombre} />
+        <Hero inicioRef={inicioRef} setearNombre={setNombre} />
         <PrecioJugador precioRef={precioRef} nombre={nombre} />
         <EstadoAnimo animoRef={animoRef} />
         <Footer />
