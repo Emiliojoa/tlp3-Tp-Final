@@ -3,7 +3,6 @@ import { Github, FileText, Users, Trophy, Target } from "lucide-react"
 export const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white relative overflow-hidden">
-      {/* Patrón de fondo sutil */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-4 left-4 w-16 h-16 border-2 border-gray-400 rounded-full"></div>
         <div className="absolute top-12 right-8 w-8 h-8 border border-gray-400 rounded-full"></div>
@@ -13,7 +12,6 @@ export const Footer = () => {
 
       <div className="container mx-auto px-6 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Sección principal */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <div className="bg-yellow-500/20 p-2 rounded-full">
@@ -33,7 +31,6 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Sección de creadores */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Users className="w-5 h-5 text-yellow-400" />
@@ -51,7 +48,6 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Sección de recursos */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-white flex items-center space-x-2">
               <FileText className="w-5 h-5 text-yellow-400" />
@@ -98,7 +94,6 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Línea divisoria con efecto */}
         <div className="relative my-8">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full border-t border-gray-700"></div>
@@ -110,7 +105,6 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
         <div className="text-center space-y-2">
           <p className="text-gray-400 text-sm">
             &copy; {new Date().getFullYear()} Predi-Fut. Todos los derechos reservados.
@@ -119,7 +113,6 @@ export const Footer = () => {
         </div>
       </div>
 
-      {/* Efecto de brillo en la esquina */}
       <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-yellow-400/10 to-transparent rounded-full blur-xl"></div>
     </footer>
   )
