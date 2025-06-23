@@ -279,7 +279,7 @@ export const CaracteristicasAnimo = () => {
                 {/* Results Card */}
                 {(prediction || error) && (
                     <div
-                        className={`bg-white rounded-3xl shadow-2xl p-8 border-2 ${getResultStyles().border} transform animate-bounce`}
+                        className={`bg-white rounded-3xl shadow-2xl p-8 border-2 ${getResultStyles().border} transform `}
                     >
                         <div className="text-center">
                             <div className="inline-flex items-center justify-center w-20 h-20 bg-amber-100 rounded-full mb-6 border-4 border-amber-300">

@@ -5,7 +5,6 @@ class BodyModeloAnimo(BaseModel):
     Edad: int
     presion_sistolica: float
     presion_diastolica: float
-    
     Frecuencia_Cardiaca_BPM: int
     Duracion_Enfoque_segundos: float
     Genero: str
